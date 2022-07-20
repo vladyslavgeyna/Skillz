@@ -265,6 +265,14 @@ header .menu__link:hover {
     font-size: 55px;
     line-height: 110%;
     color: $text-light-color;
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+    transform: translate(-70%, 0);
+}
+.main__block_title._active {
+    opacity: 1;
+    transition: all 0.6s ease 0.5s;
+    transform: translate(0, 0);
 }
 .main__block_title:not(:last-child) {
     margin-bottom: 22px;
@@ -273,6 +281,14 @@ header .menu__link:hover {
     font-size: 22px;
     line-height: 150%;
     color: $text-light-color;
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+    transform: translate(0, 50%);
+}
+.main__block_text._active {
+    opacity: 1;
+    transition: all 0.6s ease 1s;
+    transform: translate(0, 0);
 }
 .main__block_text:not(:last-child) {
     margin-bottom: 22px;
@@ -318,6 +334,15 @@ header .menu__link:hover {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+.main__block_image img {
+    opacity: 0;
+    transform: translate(100%, 0);
+    transition: all 0.8s ease 0.7s;
+}
+.main__block_image._active img {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 @media(max-width:1024px) {
     .main__block_body {
@@ -387,6 +412,13 @@ header .menu__link:hover {
     align-items: center;
 }
 .courses__title {
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: all 0.5s ease 0.3s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     font-weight: 700;
     font-size: 44px;
     line-height: 120%;
@@ -418,6 +450,13 @@ header .menu__link:hover {
     }
 }
 .courses__text {
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: all 0.5s ease 0.4s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     max-width: 644px;
     font-size: 22px;
     line-height: 150%;
@@ -599,6 +638,13 @@ header .menu__link:hover {
     }
 }
 .recommendations__title {
+    opacity: 0;
+    transform: translate(100%, 0);
+    transition: all 0.5s ease 0.2s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     font-weight: 700;
     font-size: 44px;
     line-height: 120%;
@@ -615,6 +661,13 @@ header .menu__link:hover {
     }
 }
 .recommendations__text {
+    opacity: 0;
+    transform: translate(100%, 0);
+    transition: all 0.5s ease 0.3s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     font-size: 22px;
     line-height: 150%;
     color: $text-light-color;
@@ -680,6 +733,13 @@ header .menu__link:hover {
     align-items: center;
 }
 .workshops__title {
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: all 0.5s ease 0.3s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     display: inline-block;
     font-weight: 700;
     font-size: 44px;
@@ -711,6 +771,13 @@ header .menu__link:hover {
     }
 }
 .workshops__text {
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: all 0.5s ease 0.4s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     max-width: 644px;
     font-size: 22px;
     line-height: 150%;
@@ -907,6 +974,13 @@ header .menu__link:hover {
     flex: 0 1 50%;
 }
 .teaching__title {
+    opacity: 0;
+    transform: translate(100%, 0);
+    transition: all 0.5s ease 0.2s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     display: inline-block;
     position: relative;
     font-weight: 700;
@@ -928,6 +1002,13 @@ header .menu__link:hover {
 }
 
 .teaching__text {
+    opacity: 0;
+    transform: translate(100%, 0);
+    transition: all 0.5s ease 0.3s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     font-size: 22px;
     line-height: 150%;
     color: $text-light-color;
@@ -1020,6 +1101,13 @@ header .menu__link:hover {
     align-items: center;
 }
 .articles__title {
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: all 0.5s ease 0.3s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     font-weight: 700;
     font-size: 44px;
     line-height: 120%;
@@ -1051,6 +1139,13 @@ header .menu__link:hover {
     }
 }
 .articles__text {
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: all 0.5s ease 0.4s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     max-width: 644px;
     font-size: 22px;
     line-height: 150%;
@@ -1182,6 +1277,13 @@ header .menu__link:hover {
     border-radius: 4px;
 }
 .submit__title {
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: all 0.5s ease 0.3s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     font-weight: 700;
     font-size: 44px;
     line-height: 120%;
@@ -1200,6 +1302,13 @@ header .menu__link:hover {
     gap: 16px;
 }
 .submit__form__input {
+    opacity: 0;
+    transform: translate(-100%, 0);
+    transition: all 0.8s ease 0.4s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     flex: 1 1 auto;
     padding: 5px 24px;
     font-weight: 700;
@@ -1212,7 +1321,6 @@ header .menu__link:hover {
     max-width: 400px;
     @media(max-width:871px) {
         padding: 0px 15px;
-        font-size: 40px;
         font-size: 18px;
     }
 }
@@ -1223,6 +1331,13 @@ header .menu__link:hover {
     color: #1C1C33;
 }
 .submit__form__button {
+    opacity: 0;
+    transform: translate(100%, 0);
+    transition: all 0.8s ease 0.4s;
+    &._active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     padding: 5px 24px;
     font-weight: 700;
     font-size: 20px;
@@ -1231,10 +1346,6 @@ header .menu__link:hover {
     background: #1C1C33;
     border-radius: 4px;
     color: $teal-color;
-    transition: all 0.3s ease 0s;
-    &:hover {
-        background-color:#000;
-    }
     @media(max-width:871px) {
         padding: 0px 15px;
         font-size: 18px;
