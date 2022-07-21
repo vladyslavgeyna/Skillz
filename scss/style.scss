@@ -21,7 +21,7 @@ img {vertical-align: top;}
 h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: inherit;}
 //========================================================================
 ::selection {
-    background-color: $teal-color;
+    background-color: $teal-color-hover;
 }
 .wrapper {
     min-height: 100%;
@@ -130,7 +130,7 @@ body {
     color: #1C1C33;
     transform: translate(0, 120%);
     opacity: 0;
-    transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 2s;
     animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
@@ -140,6 +140,7 @@ body {
 
     }
     @media (max-width:767.98px) {
+        line-height: 100%;
         animation-name: levitation-horizontal-small;
 
     }
@@ -202,7 +203,7 @@ header .menu__link:hover {
     z-index: 3;
 }
 .header__basket_img {
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 .header__basket_img:hover {
     transform: scale(1.15);
@@ -350,7 +351,7 @@ header .menu__link:hover {
     color: $text-light-color;
     opacity: 0;
     transition: all 0.6s ease 0s;
-    transform: translate(-70%, 0);
+    transform: translate(0, 50%);
 }
 .main__block_title._active {
     opacity: 1;
@@ -421,7 +422,7 @@ header .menu__link:hover {
 .main__block_image img {
     opacity: 0;
     transform: translate(100%, 0);
-    transition: all 0.8s ease 1s;
+    transition: all 0.8s ease 1.5s;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
@@ -812,7 +813,7 @@ header .menu__link:hover {
 }
 @media(max-width:871px) {
     .recommendations__image_img {
-        padding-bottom: 50%;
+        padding-bottom: 60%;
     }
     .recommendations__image_img-img {
         background-position: center;
@@ -1360,17 +1361,34 @@ header .menu__link:hover {
     height: 100%;
     opacity: 0;
 }
-.articles__column:nth-child(1) .articles__item {
-    transform: translate(-300%, 0);
-    transition: all 0.6s ease 0.7s;
+
+@media(min-width:871px) {
+    .articles__column:nth-child(1) .articles__item {
+        transform: translate(-300%, 0);
+        transition: all 0.8s ease 0.3s;
+    }
+    .articles__column:nth-child(2) .articles__item {
+        transform: translate(-200%, 0);
+        transition: all 0.8s ease 0.2s;
+    }
+    .articles__column:nth-child(3) .articles__item {
+        transform: translate(-100%, 0);
+        transition: all 0.8s ease 0.1s;
+    }
 }
-.articles__column:nth-child(2) .articles__item {
-    transform: translate(-200%, 0);
-    transition: all 0.6s ease 0.45s;
-}
-.articles__column:nth-child(3) .articles__item {
-    transform: translate(-100%, 0);
-    transition: all 0.6s ease 0.2s;
+@media(max-width:871px) {
+    .articles__column:nth-child(1) .articles__item {
+        transform: translate(-300%, 0);
+        transition: all 0.8s ease 0s;
+    }
+    .articles__column:nth-child(2) .articles__item {
+        transform: translate(-200%, 0);
+        transition: all 0.8s ease 0s;
+    }
+    .articles__column:nth-child(3) .articles__item {
+        transform: translate(-100%, 0);
+        transition: all 0.8s ease 0s;
+    }
 }
 .articles__column._active {
     .articles__item {
@@ -1456,7 +1474,7 @@ header .menu__link:hover {
     }
     .articles__columns {
         margin: 0 auto;
-        flex-direction: column;
+        flex-direction: column-reverse;
         max-width: 70%;
         justify-content: center;
     }
@@ -1504,7 +1522,7 @@ header .menu__link:hover {
 }
 .submit__form__input {
     opacity: 0;
-    transform: translate(-100%, 0);
+    transform: translate(-120%, 0);
     transition: all 0.8s ease 0.4s;
     &._active {
         opacity: 1;
@@ -1533,7 +1551,7 @@ header .menu__link:hover {
 }
 .submit__form__button {
     opacity: 0;
-    transform: translate(100%, 0);
+    transform: translate(120%, 0);
     background-color: transparent;
     transition: all 0.8s ease 0.4s;
     &._active {
@@ -1636,8 +1654,14 @@ header .menu__link:hover {
         padding-top: 150px;
         padding-bottom: 100px;
     }
+    .footer__main {
+        margin-top: 70px;
+    }
 }
 @media (max-width:780px) {
+    .footer__main {
+        margin-top: 50px;
+    }
     .footer__main_menu_label {
         font-size: 18px;
         margin-bottom: 20px;
