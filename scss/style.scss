@@ -505,6 +505,15 @@ header .menu__link:hover {
 }
 .courses__text {
     overflow: hidden;
+    &:not(:last-child) {
+        margin-bottom: 46px;
+        @media(max-width:871px) {
+            margin-bottom: 30px;
+        }
+        @media(max-width:871px) {
+            margin-bottom: 30px;
+        }
+    }
 }
 .courses__text p {
     opacity: 0;
@@ -516,17 +525,10 @@ header .menu__link:hover {
     text-align: center;
     color: $text-light-color;
     @media(max-width:871px) {
-        margin-bottom: 30px;
         font-size: 20px;
     }
     @media(max-width:425px) {
         font-size: 18px;
-    }
-    &:not(:last-child) {
-        margin-bottom: 46px;
-        @media(max-width:871px) {
-            margin-bottom: 30px;
-        }
     }
 }
 .courses__text._active p {
@@ -829,6 +831,15 @@ header .menu__link:hover {
 }
 .workshops__text {
     overflow: hidden;
+    &:not(:last-child) {
+        margin-bottom: 46px;
+        @media(max-width:871px) {
+            margin-bottom: 30px;
+        }
+        @media(max-width:871px) {
+            margin-bottom: 30px;
+        }
+    }
 }
 .workshops__text p {
     opacity: 0;
@@ -839,18 +850,12 @@ header .menu__link:hover {
     line-height: 150%;
     color: #4E4E65;
     @media(max-width:871px) {
-        margin-bottom: 30px;
         font-size: 20px;
     }
     @media(max-width:425px) {
         font-size: 18px;
     }
-    &:not(:last-child) {
-        margin-bottom: 46px;
-        @media(max-width:871px) {
-            margin-bottom: 30px;
-        }
-    }
+
 }
 .workshops__text._active p {
     opacity: 1;
@@ -1212,6 +1217,15 @@ header .menu__link:hover {
 }
 .articles__text {
     overflow: hidden;
+    &:not(:last-child) {
+        margin-bottom: 46px;
+        @media(max-width:871px) {
+            margin-bottom: 30px;
+        }
+        @media(max-width:871px) {
+            margin-bottom: 30px;
+        }
+    }
 }
 .articles__text p {
     opacity: 0;
@@ -1223,17 +1237,10 @@ header .menu__link:hover {
     text-align: center;
     color: #4E4E65;
     @media(max-width:871px) {
-        margin-bottom: 30px;
         font-size: 20px;
     }
     @media(max-width:425px) {
         font-size: 18px;
-    }
-    &:not(:last-child) {
-        margin-bottom: 46px;
-        @media(max-width:871px) {
-            margin-bottom: 30px;
-        }
     }
 }
 .articles__text._active p {
