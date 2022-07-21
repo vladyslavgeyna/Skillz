@@ -1017,12 +1017,20 @@ header .menu__link:hover {
     background: rgba(34, 34, 34, 0.4);
     border-radius: 9px;
     transition: all 0.3s ease 0s;
+    @media (max-width: 767px) {
+        width: 12px;
+        height: 12px;
+    }
 }
 .swiper-reviews__pagination .swiper-pagination-bullet-active {
     width: 18px;
     height: 18px;
     background: #222222;
     border-radius: 9px;
+    @media (max-width: 767px) {
+        width: 12px;
+        height: 12px;
+    }
 }
 //========================================================================
 .teaching {
